@@ -1,4 +1,7 @@
-package com.example.demo.persistence.repository.StudentRepository;
+package com.example.demo.persistence.repository;
 
-public interface StudentRepository {
+import com.example.demo.persistence.entity.Student;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface StudentRepository extends MongoRepository<Student, String> {
 }
